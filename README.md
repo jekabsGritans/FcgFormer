@@ -1,3 +1,9 @@
+# How to run this
+- create conda env with python 3.9
+- pip install -r requirements.txt
+- install correct version of pytorch
+- log in to huggingface-cli to get access to huggingface repos
+- python train.py should run
 
 ### :star: This is the official repo for our paper **Fcg-Former: Identification of Functional Groups in FTIR Spectra Using Enhanced Transformer-Based Model** published in Analytical Chemistry 2024 :star:
 

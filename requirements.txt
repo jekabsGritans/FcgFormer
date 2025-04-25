@@ -49,18 +49,18 @@ seaborn==0.13.2
 setuptools==69.5.1
 simplejson==3.19.2
 six==1.16.0
-sympy==1.12
+sympy==1.13.3
 tbb==2021.11.0
 tensorboardX==2.6.2.2
 threadpoolctl==3.5.0
 tokenizers==0.19.1
-torch==2.3.1+cu118
-torchaudio==2.3.1+cu118
-torchvision==0.18.1+cu118
+# torch==2.3.1+cu118
+# torchaudio==2.3.1+cu118
+# torchvision==0.18.1+cu118
 tqdm==4.66.4
 transformers==4.42.4
 typeguard==4.1.2
-typing_extensions==4.9.0
+typing_extensions==4.10.0
 tzdata==2024.1
 urllib3==2.2.2
 wcwidth==0.2.13
