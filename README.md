@@ -1,9 +1,27 @@
 # How to run this
-- create conda env with python 3.9
-- pip install -r requirements.txt
-- install correct version of pytorch
-- log in to huggingface-cli to get access to huggingface repos
-- python train.py should run
+- install Anaconda
+  - (https://www.anaconda.com/docs/getting-started/anaconda/install)
+- create conda environment with python 3.9
+  - run `conda create --name fcgformer python=3.9` in the terminal
+- activate the environment
+  - `conda activate fcgformer`
+- install required libraries
+  - for everything except pytorch, run `pip install -r requirements.txt`
+  - install pytorch
+    - easiest: `pip install torch torchvision torchaudio` (this will run the model on the CPU)
+    - (optionally) if you have an nvidia GPU, you can look online how to install the correct version for your gpu and operating system
+      - this will make the model training much faster, but is not required if you just want to use the already trained model, which by default is downloaded from the internet
+  - sign up to https://huggingface.co/
+  - create a huggingface access token so that you can authorize your installation to download the dataset / trained model from huggingface
+    - https://huggingface.co/settings/tokens/new?tokenType=read
+  - run `huggingface-cli login` and enter the access token you created
+  - open and try running the jupyter notebook `notebook.ipynb`
+    - if you're using vscode, this can be opened and run via vscode
+    - if not, run `jupyter lab` and it should open a programming environment in your browser where you can run the notebook.
+
+
+
+# Below is the original documentation:
 
 ### :star: This is the official repo for our paper **Fcg-Former: Identification of Functional Groups in FTIR Spectra Using Enhanced Transformer-Based Model** published in Analytical Chemistry 2024 :star:
 
